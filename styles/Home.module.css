@@ -1,0 +1,33 @@
+/* ==================  
+?    ===  Colour-Palette  ===
+.     ================== */
+/* filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%); */
+/* filter: brightness(0) saturate(100%) invert(19%) sepia(63%) saturate(4179%) hue-rotate(293deg) brightness(123%) contrast(136%); */
+/*? === design === */
+/*? === text === */
+/* futura: font-family: futura-pt,sans-serif; */
+@import url("https://use.typekit.net/izw3hmc.css");
+.home_title_div {
+  width: 100vw;
+  height: 5vh;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10vh;
+  margin-top: 4vh;
+  margin-bottom: 3vh;
+}
+.home_title_div > .home_title_h1 {
+  min-width: 100%;
+  color: #ef5f57;
+  font-size: 5vh;
+}
+.home_title_div > .home_title_p {
+  min-width: 100%;
+  color: white;
+  font-size: 2.5vh;
+}
+
+/*# sourceMappingURL=Home.module.css.map */
