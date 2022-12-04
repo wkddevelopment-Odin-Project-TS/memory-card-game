@@ -1,8 +1,10 @@
 .....
-# README for the Memory-Card-Game
+# README for the Cartoon-Monster Memory-Card-Game
 
 # App/Game User-Guide
+12 unique images are arranged in 2 rows. The goal is to click on each card exactly once or to score 12 points. For each clicked card you get 1 point. However, the cards are reshuffled with each click and if you double-click a card, the points are set to 0.
 # App/Game-Benutzeranleitung
+12 einzigartige Bilder sind in 2 Reihen angeordnet. Das Ziel ist es jede Karte genau 1x anzuklicken bzw. 12 Punkte zu erreichen. Für jede geklickte Karte bekommt man 1 Punkt. Die Karten werden jedoch bei jedem KLick neu gemischt und klickt man eine Karte doppelt, werden die Punkte auf 0 gesetzt. 
 
 # Technical Description
 # Technische Beschreibung
@@ -16,6 +18,7 @@ ESLint
 Git, Github, Vercel (Deployment)
 
 # Free Materials / Freie Materialien
+Special thanks goes to freepik.com user macrovector for the great cartoon images: https://www.freepik.com/author/macrovector
 
 # Github-Repository
 www.github.com/wkddevelopment/Calorie-Energy_Balance
