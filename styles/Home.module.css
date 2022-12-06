@@ -10,24 +10,25 @@
 .home_title_div {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  margin-top: 4vh;
-  line-height: 1.5vh;
+  max-width: 75vw;
 }
 .home_title_div > .home_title_h1 {
   color: #529622;
-  font-size: 6vh;
+  font-size: 3vw;
+  margin-top: 0;
 }
 .home_title_div > .home_title_p {
   color: white;
-  font-size: 3vh;
-  margin-left: 2rem;
+  font-size: 2vw;
+  margin-left: 20px;
+  padding-inline: 10px;
+  padding-top: 0px;
 }
 
 .scoreboard_section {
   position: absolute;
-  top: 0;
-  right: 1vh;
+  top: 6px;
+  right: 5px;
   display: flex;
   flex-direction: column;
   line-height: 0.3vh;
@@ -40,32 +41,39 @@
   justify-content: flex-end;
   gap: 0.5vw;
   font-weight: bold;
-  font-size: medium;
+  font-size: 1.5vw;
 }
 
 .gameboard_section {
-  margin-top: 3vh;
+  height: calc(100vh / 4 * 3);
+  padding-top: 3vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
 }
 .gameboard_section > .monster_card {
-  width: 280px;
-  height: 350px;
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw / 7);
+  aspect-ratio: 3/4;
   outline: solid 0.3rem #529622;
   border-radius: 15px;
-  padding-top: 1rem;
-  padding-right: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 2rem;
   margin: 10px;
-  text-align: center;
   color: white;
   font-size: 23px;
+  text-align: center;
+}
+.gameboard_section > .monster_card > .monster_image {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  height: 75%;
+  aspect-ratio: 1/1;
 }
 .gameboard_section > .monster_card > h3 {
-  margin-top: -1vh;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .gameboard_section .monster_card:hover {
   box-shadow: 0 0 1.5rem green;
