@@ -22,7 +22,7 @@ Git, Github, Vercel (Deployment)
 Special thanks goes to freepik.com user macrovector for the great cartoon images: https://www.freepik.com/author/macrovector
 
 # Github-Repository
-www.github.com/wkddevelopment/Calorie-Energy_Balance
+https://github.com/wkddevelopment-Odin-Project-TS/memory-card-game
 
 # Contact / Kontakt
 Stefan Bartl (WKDVie or wkd-development)
