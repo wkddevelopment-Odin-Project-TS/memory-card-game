@@ -3,6 +3,8 @@ import type { NextPage } from 'next'
 import Head from 'next/head';
 import useTranslation from 'next-translate/useTranslation';
 import Image from 'next/image';
+import { useState } from 'react';
+
 import Monster_1 from '../public/graphics/pics/monster_group/monster_1.svg';
 import Monster_2 from '../public/graphics/pics/monster_group/monster_2.svg';
 import Monster_3 from '../public/graphics/pics/monster_group/monster_3.svg';
@@ -15,8 +17,6 @@ import Monster_9 from '../public/graphics/pics/monster_group/monster_9.svg';
 import Monster_10 from '../public/graphics/pics/monster_group/monster_10.svg';
 import Monster_11 from '../public/graphics/pics/monster_group/monster_11.svg';
 import Monster_12 from '../public/graphics/pics/monster_group/monster_12.svg';
-import { useRef, useState } from 'react';
-
 
 const Home: NextPage = () => {
   
@@ -28,14 +28,22 @@ const Home: NextPage = () => {
   const home_scoreboard_best_h2 = t('home_scoreboard_best_h2');
   const home_monster_alt = t('home_monster_alt');
 
-//! Best score
-
   const [actualScore, setActualScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
 
+  function resetCounter(){
+          // reset 'clicked' attribute 
+          const all_cards = document.querySelectorAll('#monster_card_id');
+          for (let index = 0; index < all_cards.length; index++) {
+            const card = all_cards[index];
+            card.setAttribute('data-clicked', 'no');
+          };
+          setActualScore(0);
+  };
+
   const onCardClick = (e:any) => {
     e.preventDefault();
-    console.log(e.target.getAttribute('data-clicked'))
+
     // Toggle card clicked attribute
     e.target.getAttribute('data-clicked') === 'no'
     ? e.target.setAttribute('data-clicked', 'yes')
@@ -53,13 +61,7 @@ const Home: NextPage = () => {
         setActualScore(0);
       };
 
-      // reset 'clicked' attribute 
-      const all_cards = document.querySelectorAll('#monster_card_id');
-      for (let index = 0; index < all_cards.length; index++) {
-        const card = all_cards[index];
-        card.setAttribute('data-clicked', 'no');
-      }
-      
+      resetCounter();
 
     };
 
@@ -67,6 +69,13 @@ const Home: NextPage = () => {
 
 
   };
+
+  // Game Won
+  if(actualScore === 12){
+    setBestScore(12)
+    resetCounter()
+  };
+  
 
   return (
       <>

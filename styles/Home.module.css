@@ -70,13 +70,45 @@
   padding-top: 15px;
   height: 75%;
   aspect-ratio: 1/1;
+  pointer-events: none;
 }
 .gameboard_section > .monster_card > h3 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  pointer-events: none;
 }
 .gameboard_section .monster_card:hover {
   box-shadow: 0 0 1.5rem green;
+}
+
+.displayNone {
+  display: none;
+}
+
+.fireworksContainer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 130vh;
+  z-index: 1;
+}
+.fireworksContainer > h3 {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  color: white;
+  font-size: 4rem;
+  animation: fireworksText_animation 3s infinite linear;
+}
+
+@keyframes fireworksText_animation {
+  33% {
+    transform: scale(1.3);
+  }
+  66% {
+    transform: scale(0.7);
+  }
 }
 
 /*# sourceMappingURL=Home.module.css.map */

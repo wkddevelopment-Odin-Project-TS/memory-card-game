@@ -7,7 +7,8 @@
 12 einzigartige Bilder sind in 2 Reihen angeordnet. Das Ziel ist es jede Karte genau 1x anzuklicken bzw. 12 Punkte zu erreichen. Für jede geklickte Karte bekommt man 1 Punkt. Die Karten werden jedoch bei jedem KLick neu gemischt und klickt man eine Karte doppelt, werden die Punkte auf 0 gesetzt. 
 
 # Technical Description
-# Technische Beschreibung
+# Technische 
+coming soon...
 
 # Tools / Frameworks / Libraries
 Node.js
